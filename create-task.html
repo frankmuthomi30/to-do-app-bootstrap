@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App - Create Task</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .notification {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Todo App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-task.html">Create Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view-tasks.html">View Tasks</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <div class="container mt-4">
+    <h1>Create Task</h1>
+    <form id="createTaskForm">
+      <div class="form-group">
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="importantCheckbox">Important:</label>
+        <input type="checkbox" id="importantCheckbox" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+    <div id="notification" class="alert alert-success mt-4 notification"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
